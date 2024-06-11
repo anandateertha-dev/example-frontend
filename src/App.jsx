@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        Arama eno bsdk??
+        Arama eno bsdk?? 😂😂
       </div>
     </>
   )
