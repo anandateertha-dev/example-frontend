@@ -26,7 +26,7 @@ const Todos = () => {
     return (
         <>
             <button onClick={()=>navigate('/video')}>Go to video</button>
-            <h1>Video playing</h1>
+            <h1>Video playing and env text is {import.meta.env.VITE_TEXT}</h1>
             <video controls width="600">
                 <source src="/3571264-uhd_3840_2160_30fps.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
