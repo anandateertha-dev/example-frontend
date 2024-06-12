@@ -1,9 +1,11 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Todos = () => {
 
     const [todos, setTodos] = useState([]);
+    const navigate=useNavigate()
 
     useEffect(() => {
         const fetchTodos = async () => {
@@ -23,6 +25,7 @@ const Todos = () => {
 
     return (
         <>
+            <button onClick={()=>navigate('/video')}>Go to video</button>
             <h1>Video playing</h1>
             <video controls width="600">
                 <source src="/3571264-uhd_3840_2160_30fps.mp4" type="video/mp4" />
